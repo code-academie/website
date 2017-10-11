@@ -1,8 +1,3 @@
-# Comment publier ses modifications sous GitHub depuis CodeAnywhere ?
+Site Web de la Code Académie conçu à des fins didactiques mais pas que !
 
-1. Faire un clic-droit sur la connection intitulé « website »,
-2. Sélectionner « SSH Terminal »,
-3. Y taper `git add .`,
-4. Puis `git commit -m "<Votre message décrivant votre modification>"`,
-5. Puis `git push`,
-6. Vos fichiers sont maintenant sur GitHub.
+La documentation sur les différents aspects traités en cours est accessible sur le [wiki](https://github.com/code-academie/website/wiki).
