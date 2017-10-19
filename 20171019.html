@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>.:Code Academie::Mon titre:.</title>
+  <!-- Bootstrap 4.0.0 -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>[en-tête]</header>
+  <section>
+    <hr />
+    <article>
+      <h1>Mon premier formulaire</h1>
+      <form class="form-horizontal">
+        <fieldset>
+
+          <label for="range">Slider</label>
+          <input type="range" name="range" />
+
+          <label for="range">Slider</label>
+          <input type="range" name="range" id="slider" class="slider" min="0" max="5" step="1" value="0" />
+          <label for="text">Champ de texte avec placeholder</label>
+          <input type="text" name="text" id="text">
+
+          <label for="url">Champ d'Url</label>
+          <input type="url" id="url" name="url">
+
+          <label for="email">Champ Email</label>
+          <input type="email" id="email" name="email">
+
+          <label for="numeric">Format numerique</label>
+          <input type="number" name="numeric" id="numeric">
+
+          <label for="date">Format date</label>
+          <input type="date" name="date" id="date">
+
+          <label for="color-picker">Choix de la couleur</label>
+          <input type="color" name="color-picker" id="color-picker">
+
+          <button type="submit" class="boutonSubmit" role="button" aria-disabled="false">
+    Soumettre le formulaire
+  </button></p>
+        </fieldset>
+      </form>
+
+    </article>
+    <hr />
+    <article>
+      <h1>Mon deuxième formulaire</h1>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label>
+          <input type="checkbox"> Remember me
+        </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Sign in</button>
+          </div>
+        </div>
+
+      </form>
+    </article>
+    <hr />
+    <article>
+      <h1>Mon premier tableau</h1>
+      <table>
+        <caption>Titre du tableau</caption>
+        <tr>
+          <th>Titre du film</th>
+          <td>Massacre à la tronçonneuse</td>
+          <td>Les bisounours font du ski</td>
+          <td>Lucky Luke, seul contre tous</td>
+        </tr>
+        <tr>
+          <th>Pour enfants ?</th>
+          <td>Non, trop violent</td>
+          <td>Oui, adapté</td>
+          <td rowspan="2">Pour toute la famille !</td>
+        </tr>
+        <tr>
+          <th>Pour adolescents ?</th>
+          <td>Oui</td>
+          <td>Pas assez violent...</td>
+        </tr>
+      </table>
+    </article>
+    <hr />
+    <article>
+      <h1>Mon second tableau</h1>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover table-condensed">
+          <caption>Passagers du vol 377</caption>
+
+          <thead>
+            <!-- En-tête du tableau -->
+            <tr>
+              <th>Nom</th>
+              <th>Âge</th>
+              <th>Pays</th>
+            </tr>
+          </thead>
+
+          <tfoot>
+            <!-- Pied de tableau -->
+            <tr>
+              <th>Nom</th>
+              <th>Âge</th>
+              <th>Pays</th>
+            </tr>
+          </tfoot>
+
+          <tbody>
+            <!-- Corps du tableau -->
+            <tr>
+              <td>Carmen</td>
+              <td>33 ans</td>
+              <td>Espagne</td>
+            </tr>
+            <tr>
+              <td>Michelle</td>
+              <td>26 ans</td>
+              <td>États-Unis</td>
+            </tr>
+            <tr>
+              <td>François</td>
+              <td>43 ans</td>
+              <td>France</td>
+            </tr>
+            <tr>
+              <td>Martine</td>
+              <td>34 ans</td>
+              <td>France</td>
+            </tr>
+            <tr>
+              <td>Jonathan</td>
+              <td>13 ans</td>
+              <td>Australie</td>
+            </tr>
+            <tr>
+              <td>Xu</td>
+              <td>19 ans</td>
+              <td>Chine</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </article>
+    <hr />
+    <article>
+      Mon article => Article (contenu autonome)
+      <aside>Informations complémentaires</aside>
+    </article>
+    <hr />
+    <article>
+      Texte normal<br />
+      <abbr>Abréviation</abbr><br />
+      <kbd>Keyboard</kbd><br />
+      <blockquote>
+        Citation (longue)
+      </blockquote><br />
+      <cite>Citation du titre d'une œuvre ou d'un évènement</cite><br />
+      <q>Citation (courte)</q><br /> SGLiv
+      <sup>Exposant</sup><br /> H
+      <sub>Indice</sub>O<br />
+      <strong>Mise en valeur forte</strong><br />
+      <em>Mise en valeur normale</em><br />
+      <mark>Mise en valeur visuelle</mark><br />
+      <h1>Titre de niveau 1</h1>
+      <h2>Titre de niveau 2</h2>
+      <h3>Titre de niveau 3</h3>
+      <h4>Titre de niveau 4</h4>
+      <h5>Titre de niveau 5</h5>
+      <h6>Titre de niveau 6</h6>
+      <img />Image
+      <figure>Figure (image, code, etc.)</figure><br />
+      <figcaption>Description de la figure</figcaption><br />
+      <audio>Son</audio><br />
+      <video>Vidéo</video><br />
+      <source>Format source pour les balises audio et video</source><br />
+      <a>Lien hypertexte</a><br />
+      <br />Retour à la ligne><br />
+      <p>Paragraphe</p><br />
+      <hr />Ligne de séparation horizontale><br />
+      <address>Adresse de contact</address><br />
+      <del>Texte supprimé</del><br />
+      <ins>Texte inséré</ins><br />
+      <dfn>Définition</dfn><br />
+      <kbd>Saisie clavier</kbd><br />
+      <pre>Affichage formaté (pour les codes sources)</pre><br />
+      <progress>Barre de progression</progress><br />
+      <time>Date ou heure</time><br />
+    </article>
+  </section>
+  <footer>[pied de page]</footer>
+</body>
+
+</html>
