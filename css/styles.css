@@ -39,6 +39,14 @@ nav a {
 	text-transform: uppercase;
 }
 
+#articles {
+	background-color: #2ecc71;
+}
+
+#articles img {
+	width: auto;
+	height: 60px;
+}
 
 /* Header */
 
@@ -85,6 +93,8 @@ header h2 {
 
 #menu {
 	float: left;
+	width:auto;
+	height:100%;
 	background-color: DeepSkyBlue;
 }
 
@@ -97,9 +107,10 @@ header h2 {
 /* Footer */
 
 footer {
-	display: flex;
+	clear:both;
+	/* display: flex;
 	background: url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
-	padding-top: 25px;
+	padding-top: 25px; */
 }
 
 footer p,
