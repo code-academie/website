@@ -1,0 +1,131 @@
+/* Feuille de style Squelette permettant d'identifier les zones du Bx model */
+
+
+/* #id                                              */
+
+
+/* .classe                                          */
+
+* {
+  margin: 0;
+  padding: 0;
+  margin: 15px;
+  border: 3px;
+  padding: 10px;
+  border-style: dotted;
+}
+
+body {
+  background-color: green;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#bloc_page {
+  width: 80%;
+  background-color: blue;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#bloc_page header {
+  width: 80%;
+  background-color: yellow;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#titre_principal {
+  width: 80%;
+  background-color: gray;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#logo {
+  width: 80%;
+  background-color: pink;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#menu {
+  width: 80%;
+  background-color: yellow;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#menu nav {
+  width: 80%;
+  background-color: gray;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#articles {
+  width: 80%;
+  background-color: yellow;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#articles section {
+  width: 80%;
+  background-color: gray;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#articles section article {
+  width: 80%;
+  background-color: pink;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#articles section article h3 {
+  width: 80%;
+  background-color: Crimson;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#articles section article video {
+  width: 80%;
+  background-color: Crimson;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+#articles section article img {
+  width: 80%;
+  background-color: Crimson;
+  border-style: dashed;
+  border-color: YellowGreen;
+  
+	width: auto;
+	height: 60px;
+}
+}
+
+#articles section article p {
+  width: 80%;
+  background-color: Crimson;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+aside {
+  width: 80%;
+  background-color: yellow;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
+
+footer {
+  width: 80%;
+  background-color: yellow;
+  border-style: dashed;
+  border-color: YellowGreen;
+}
