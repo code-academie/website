@@ -1,23 +1,60 @@
+/* html, body{
+height : 100%;
+}
+#main{
+height : 100%;
+width : auto;
+}
+ 
+#colone gauche{
+height : 100%;
+width : 9px;
+float : left;
+}
+ 
+#centrale{
+height : auto;
+float : left;
+}
+ 
+#colone droite{
+height : 100%;
+width : 9px;
+float : left;
+} */
+
+/* https://openclassrooms.com/forum/sujet/div-prend-toute-la-hauteur-54908 */
+
+/* https://www.w3schools.com/css/css_float.asp */
+
 body {
   font-family: 'Calibri', sans-serif;
   background-color: #efe6dd;
   color: #181818;
-  height:100vh;
+  height: 100vh;
 }
 
 header {
   text-align: center;
   background-color: #1abc9c;
+  overflow: auto;
+}
+
+header img {
+  float: left;
 }
 
 nav {
   float: left;
-  padding: 10px;
+  padding: 15px;
+  margin: 15px;
   border-width: 2px;
   border-style: solid;
   border-color: #c0392b;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px #656565;
   min-height: 100vh;
-  width: 10%;
+  width: 11%;
 }
 
 section {
@@ -27,11 +64,22 @@ section {
 }
 
 section article {
-  padding: 10px;
+  padding: 15px;
+  margin: 15px;
   border-width: 2px;
   border-style: solid;
   border-color: #2980b9;
-  border-radius: 20px 20px 20px 20px;
+  /*   border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px #656565;
+  */
+  /*   border-radius: 20px 20px 20px 20px;
+	box-shadow: 5px 5px 4px 4px #000000; */
+  /*   -moz-box-shadow: 10px 10px 5px 0px #656565;
+  -webkit-box-shadow: 10px 10px 5px 0px #656565;
+  -o-box-shadow: 10px 10px 5px 0px #656565;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; */
 }
 
 section article h3 {
@@ -48,20 +96,28 @@ section article img {
 section article p {}
 
 aside {
-  float: right;
-  min-height: 100vh;
-  width: 10%;
-padding: 10px;
+  float: left;
+  padding: 15px;
+  margin: 15px;
   border-width: 2px;
   border-style: solid;
-  border-color: #c0392b;}
+  border-color: #c0392b;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px #656565;
+  min-height: 100vh;
+  width: 11%;
+}
 
 aside h1 {}
 
 aside p {}
 
-footer {float: left;
-width: 100%;}
+footer {
+  Float:left;
+  text-align: center;
+  background-color: #1abc9c;
+  width: 100%;
+}
 
 footer p {}
 
