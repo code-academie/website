@@ -1,173 +1,68 @@
-/* Définition des polices personnalisées */
-
-@font-face {
-	font-family: 'BallparkWeiner';
-	src: url('../polices/ballpark.eot');
-	src: url('../polices/ballpark.eot?#iefix') format('embedded-opentype'), url('../polices/ballpark.woff') format('woff'), url('../polices/ballpark.ttf') format('truetype'), url('../polices/ballpark.svg#BallparkWeiner') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Dayrom';
-	src: url('../polices/dayrom.eot');
-	src: url('../polices/dayrom.eot?#iefix') format('embedded-opentype'), url('../polices/dayrom.woff') format('woff'), url('../polices/dayrom.ttf') format('truetype'), url('../polices/dayrom.svg#Dayrom') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
-/* Eléments principaux de la page */
-
 body {
-	background-color: #efe6dd;
-	font-family: 'Trebuchet MS', Arial, sans-serif;
-	color: #181818;
+  font-family: 'Calibri', sans-serif;
+  background-color: #efe6dd;
+  color: #181818;
+  height:100vh;
 }
-
-#bloc_page {
-	background-color: #7f8c8d;
-	width: 900px;
-	margin: auto;
-}
-
-section h1,
-footer h1,
-nav a {
-	font-family: Dayrom, serif;
-	font-weight: normal;
-	text-transform: uppercase;
-}
-
-#articles {
-	background-color: #2ecc71;
-	float: left;
-	width: 56%;
-	margin-left: 0.9%;
-	margin-right: 0.9%;
-	padding-right: 5px;
-	padding-left: 5px;
-}
-
-#articles img {
-	width: auto;
-	height: 60px;
-}
-
-#menu,
-#article,
-aside {
-	margin-top: 10px;
-	padding-bottom: 32767px;
-	margin-bottom: -32767px;
-}
-
-adise {
-	float: left;
-	width: 22%;
-	background-color: DeepSkyBlue;
-	height: 100%;
-}
-
-
-/* Header */
 
 header {
-	background-color: #f3dfa2;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+  text-align: center;
+  background-color: #1abc9c;
 }
 
-#titre_principal {
-	display: flex;
-	flex-direction: column;
+nav {
+  float: left;
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #c0392b;
+  min-height: 100vh;
+  width: 10%;
 }
 
-#logo {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+section {
+  float: left;
+  min-height: 100vh;
+  width: 70%;
 }
 
-#logo img {
-	width: auto;
-	height: 60px;
+section article {
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2980b9;
+  border-radius: 20px 20px 20px 20px;
 }
 
-header h1 {
-	font-family: 'BallparkWeiner', serif;
-	font-size: 2.5em;
-	font-weight: normal;
-	margin: 0 0 0 10px;
-	align-items: center;
+section article h3 {
+  color: #8e44ad;
 }
 
-header h2 {
-	font-family: Dayrom, serif;
-	font-size: 1.1em;
-	margin-top: 0px;
-	font-weight: normal;
+section article video {}
+
+section article img {
+  width: auto;
+  height: 60px;
 }
 
+section article p {}
 
-/* Menu */
+aside {
+  float: right;
+  min-height: 100vh;
+  width: 10%;
+padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #c0392b;}
 
-#menu {
-	float: left;
-	width: auto;
-	height: 100%;
-	background-color: DeepSkyBlue;
-}
+aside h1 {}
 
+aside p {}
 
-/* Navigation */
+footer {float: left;
+width: 100%;}
 
+footer p {}
 
-/* Footer */
-
-footer {
-	clear: both;
-	position: relative;
-}
-
-
-/* display: flex;
-	background: url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
-	padding-top: 25px; */
-
-
-}
-footer p,
-footer ul {
-	font-size: 0.8em;
-}
-footer h1 {
-	font-size: 1.1em;
-}
-#tweet {
-	width: 28%;
-}
-#mes_photos {
-	width: 35%;
-}
-#mes_amis {
-	width: 31%;
-}
-#mes_photos img {
-	border: 1px solid #181818;
-	margin-right: 2px;
-}
-#listes_amis {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 0;
-}
-#mes_amis ul {
-	list-style-image: url('images/ico_liensexterne.png');
-	padding-left: 2px;
-}
-#mes_amis a {
-	text-decoration: none;
-	color: #760001;
-}
+footer a {}
