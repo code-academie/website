@@ -35,19 +35,39 @@ body {
 }
 
 header {
-  text-align: center;
   background-color: #1abc9c;
   overflow: auto;
+  display: flex;
 }
 
 header img {
   float: left;
 }
 
+header h1 {
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #c0392b;
+  width: 100%;
+}
+
+header h2 {
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #c0392b;
+  width: 100%;
+}
+
 nav {
   float: left;
-  padding: 15px;
-  margin: 15px;
+  padding: 5px;
+  margin: 5px;
   border-width: 2px;
   border-style: solid;
   border-color: #c0392b;
@@ -60,15 +80,16 @@ nav {
 section {
   float: left;
   min-height: 100vh;
-  width: 70%;
+  width: 74%;
 }
 
 section article {
-  padding: 15px;
-  margin: 15px;
+  padding: 5px;
+  margin: 5px;
   border-width: 2px;
   border-style: solid;
   border-color: #2980b9;
+/*   display: flex; */
   /*   border-radius: 10px;
   box-shadow: 10px 10px 5px 0px #656565;
   */
@@ -97,8 +118,8 @@ section article p {}
 
 aside {
   float: left;
-  padding: 15px;
-  margin: 15px;
+  padding: 5px;
+  margin: 5px;
   border-width: 2px;
   border-style: solid;
   border-color: #c0392b;
@@ -113,7 +134,7 @@ aside h1 {}
 aside p {}
 
 footer {
-  Float:left;
+  Float: left;
   text-align: center;
   background-color: #1abc9c;
   width: 100%;

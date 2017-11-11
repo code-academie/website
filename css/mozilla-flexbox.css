@@ -1,0 +1,111 @@
+/* Layout */
+
+* {
+  /* pour maîtriser width et flex-basis */
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  /* correction bug IE de min-height non appliqué à body */
+  flex-direction: column;
+}
+
+body {
+  /* crée un contexte flex pour ses enfants */
+  display: flex;
+  /* affichage vertical */
+  flex-direction: column;
+  /* toute la hauteur du viewport */
+  min-height: 100vh;
+  padding: 1em;
+}
+
+.wrapper {
+  /* occupe la hauteur restante */
+  flex: 1 1 auto;
+  /* crée un contexte flex pour ses enfants */
+  display: flex;
+}
+
+nav,
+aside {
+  width: 20em;
+}
+
+article {
+  /* occupe la largeur restante */
+  flex: 1;
+}
+
+nav {
+  /* nav s'affiche en premier */
+  order: -1;
+}
+
+/* Responsive (fenêtres de moins de 640px) */
+
+@media (max-width: 640px) {
+  .wrapper {
+    /* affichage vertical */
+    flex-direction: column;
+  }
+  nav,
+  aside {
+    /* pour écraser la valeur 10em */
+    width: auto;
+  }
+  nav,
+  aside,
+  article {
+    /* pour écraser la valeur 0, due au flex: 1 */
+    flex-basis: auto;
+  }
+  nav {
+    /* nav reprend sa place */
+    order: 0;
+  }
+}
+
+/* Decoration */
+
+body {
+  margin: 0;
+  background: #999;
+  font-family: arial, sans-serif;
+}
+
+header,
+nav,
+aside,
+article,
+footer {
+  margin: .4em;
+  padding: 1em;
+  border-radius: 6px;
+}
+
+header {
+  background: #feb;
+}
+
+nav {
+  background: #ccf;
+}
+
+aside {
+  background: #ccf;
+}
+
+article {
+  background: #dd8;
+}
+
+section article img {
+  width: auto;
+  height: 60px;
+}
+
+footer {
+  background: #feb;
+}
