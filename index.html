@@ -8,14 +8,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>.:Code Academie :: Acceuil:.</title>
+  <!-- Import des Polices de caractères -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+  </style>
   <!-- Reset StyleSheet -->
   <link rel="stylesheet" title="reset" type="text/css" href="css/html5reset-1.6.1.css" />
   <!-- Déclaration des ressources externes : CSS -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <link rel="alternate stylesheet" title="old style" type="text/css" href="css/sav-06.11.2017-styles.css" />
+  <!--   <link rel="alternate stylesheet" title="old style" type="text/css" href="css/sav-06.11.2017-styles.css" />
   <link rel="alternate stylesheet" title="new style" type="text/css" href="css/style-css3.css" />
   <link rel="alternate stylesheet" title="squelette" type="text/css" href="css/squelette.css" />
-  <link rel="alternate stylesheet" title="mozilla flex box" type="text/css" href="css/mozilla-flexbox.css" />
+  <link rel="alternate stylesheet" title="mozilla flex box" type="text/css" href="css/mozilla-flexbox.css" /> -->
 
   <!-- Description et mots clés -->
   <meta name="description" content="Le site de la Code Académie MAIF" />
@@ -48,18 +52,20 @@
 </head>
 
 <body>
-  <!-- Début déclaration Entête de la page-->
-  <header>
-    <!--     <div id="titre_principal"> -->
-    <!--       <div id="logo"> -->
-    <img src="images/icon_2.png" alt="Logo de la Code Académie" />
-    <h1>Code Académie</h1>
-    <!--       </div> -->
-    <h2>Le site produit par les élèves</h2>
-    <!--     </div> -->
-  </header>
-  <!-- Fin déclaration Entête de la page-->
-  <div class="wrapper">
+  <!-- Début déclaration Bloc de la page-->
+  <div id=bloc_page>
+    <!-- Début déclaration Entête de la page-->
+    <header>
+      <!--     <div id="titre_principal"> -->
+      <div id="logo">
+        <img src="images/icon_2.png" alt="Logo de la Code Académie" />
+        <h1>Code Académie</h1>
+      </div>
+      <h2>Le site produit par les élèves</h2>
+      <!--     </div> -->
+    </header>
+    <!-- Fin déclaration Entête de la page-->
+
     <!-- Début déclaration Menu de navigation de la page-->
     <nav>
       <h2>Menu</h2>
@@ -156,13 +162,15 @@
       <p>C'est moi, Bertrand ! Je suis né un 01 septembre 1973.</p>
     </aside>
     <!-- Fin déclaration de la Zone A côtés -->
+    
+    <!-- Début déclaration du Pied de page -->
+    <footer>
+      <p>Copyright Bertrand DELION - Tous droits réservés<br />
+        <a href="#">Me contacter !</a></p>
+    </footer>
+    <!-- Fin déclaration du Pied de page -->
   </div>
-  <!-- Début déclaration du Pied de page -->
-  <footer>
-    <p>Copyright Bertrand DELION - Tous droits réservés<br />
-      <a href="#">Me contacter !</a></p>
-  </footer>
-  <!-- Fin déclaration du Pied de page -->
+  <!-- Fin déclaration Bloc de la page-->
 </body>
 
 </html>
