@@ -33,7 +33,7 @@ body {
 	background-color: #efe6dd;
 	font-family: 'Calibri', sans-serif;
 	color: #181818;
-/* 	border: 2px solid yellow; */
+	/* 	border: 2px solid yellow; */
 }
 
 header {
@@ -55,33 +55,65 @@ nav {
 	width: 15%;
 	margin: 1em;
 	padding: 1em;
-	
 	border-radius: 5px;
 	box-shadow: 10px 10px 5px 0px #656565;
-	
 	background-color: #2980b9;
-	
-/* 	border: 2px solid black; */
+	/* 	border: 2px solid black; */
 }
 
 nav h2 {
-	text-align: center;
+	padding: 0.1em 0.4em 0.1em 0.4em;
+	color: #638edd;
+	background-color: #EFEFF1;
+	text-align: right;
+}
+
+nav ul {
+	line-height: 1.5em;
+}
+
+nav li {
+	font-size: 0.9em;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* nav ul li.sel {
+	padding: 0.1em 0.2em 0.1em 0.2em;
+	color: black;
+	background-color: white;
+	border-left: 8px solid #bee3ba;
+} */
+
+nav ul a {
+	display: block;
+	padding: 0.1em 0.2em 0.1em 0.2em;
+	font-weight: normal;
+	color: #eee;
+/* 	background-color: #adadad; */
+/* 	border-left: 8px solid #EFEFF1; */
+}
+
+nav ul a:hover {
+	color: #1a1a1a;
+	background-color: #EFEFF1;
+	border-left: 8px solid #adadad;
 }
 
 section {
 	float: left;
 	width: 60%;
-/* 	margin: 1em auto 1em auto;
+	/* 	margin: 1em auto 1em auto;
 	padding: 1em auto 1em auto; */
-	
-/* 	border: 2px solid red; */
+	/* 	border: 2px solid red; */
 }
 
 article {
 	float: left;
 	margin: 1em 1em 0 1em;
 	padding: 1em;
-	
 	border-radius: 5px;
 	border: 2px solid #34495e;
 }
@@ -117,18 +149,14 @@ section P {
 aside {
 	float: right;
 	width: 15%;
-	
 	margin: 1em;
 	padding: 1em;
-	
 	color: #ecf0f1;
 	text-align: center;
 	border-radius: 5px;
 	box-shadow: 10px 10px 5px 0px #656565;
-	
 	background-color: #2c3e50;
-	
-/* 	border: 2px solid purple; */
+	/* 	border: 2px solid purple; */
 }
 
 footer {
@@ -136,10 +164,8 @@ footer {
 	width: 100%;
 	margin: 1em 0 0 0;
 	padding: 1em;
-	
 	text-align: center;
 	color: #ecf0f1;
 	background-color: #7f8c8d;
-	
-/* 	border: 2px solid violet; */
+	/* 	border: 2px solid violet; */
 }
