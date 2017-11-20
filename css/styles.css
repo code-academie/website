@@ -37,22 +37,42 @@ body {
 }
 
 header {
+/* 	display: flex;
+*/
 	color: #ecf0f1;
 	background-color: #1abc9c;
 	padding: 1em;
 	text-align: center;
 }
 
-header h1 {
-	vertical-align: middle;
+#logo {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+#logo h1 {
 	font-family: 'Kaushan Script', cursive;
 	font-size: 2.5em;
+	margin-left: 0.5em;
+}
+
+header h2 {
+	text-align: left;
+	font-size: 1.5em;
+	margin-top: 0.25em;
+}
+
+.parent {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 nav {
 	color: #ecf0f1;
-	float: left;
-	width: 15%;
+	/* 	float: left; */
+	width: 10em;
 	margin: 1em;
 	padding: 1em;
 	border-radius: 5px;
@@ -92,8 +112,8 @@ nav ul a {
 	padding: 0.1em 0.2em 0.1em 0.2em;
 	font-weight: normal;
 	color: #eee;
-/* 	background-color: #adadad; */
-/* 	border-left: 8px solid #EFEFF1; */
+	/* 	background-color: #adadad; */
+	/* 	border-left: 8px solid #EFEFF1; */
 }
 
 nav ul a:hover {
@@ -103,8 +123,8 @@ nav ul a:hover {
 }
 
 section {
-	float: left;
-	width: 60%;
+	/* 	float: left; */
+	width: 70%;
 	/* 	margin: 1em auto 1em auto;
 	padding: 1em auto 1em auto; */
 	/* 	border: 2px solid red; */
@@ -147,8 +167,8 @@ section P {
 }
 
 aside {
-	float: right;
-	width: 15%;
+	/* 	float: right; */
+	width: 10em;
 	margin: 1em;
 	padding: 1em;
 	color: #ecf0f1;
