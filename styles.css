@@ -1,41 +1,48 @@
 body {
-  background-color: lightblue;
-  margin : 0;
+  background-color: lightblue; /* couleur de fond de la page (astuce : c'est celle du menu) */
+  margin : 0; /* pas de marge */
 }
 
 header {
-  background-color: rgb(52, 152, 219);
-  color:white;
-  text-align : center;
-  padding: 1em;
+  background-color: rgb(52, 152, 219);  /* couleur bleu pour le fond du titre */
+  color:white; /* couleur du titre */
+  text-align : center; /* titre centré */
+  padding: 1em; /* marge intérieur du titre */ 
 }
 
 header h1 {
-  font-size : 3em;
+  font-size : 3em; /* taille du texte */
+  margin:0; /* pas de marge autour du titre */
 }
 
 header h2 {
-  font-size : 2em;
+  font-size : 2em; /* taille du texte */
+  margin:0; /* pas de marge autour du titre secondaire */
 }
 
 nav {
-  float:left;
-  width: 10%;
+  float:left; /* menu à gauche */
+  width: 10%; /* taille fixe relative */
 }
 
 section {
-  padding:1em;
-  margin-left:10%;
-  background-color:white;
+  margin-left:10%; /* marge à gauche pour laisser la place au menu */
+  padding:1em; /* marge intérieure */
+  background-color:white; /* les articles sur fond blanc */
 }
 
 article {
-  margin : 1em;
-  border: 2px solid red;
-  border-radius: 25px;
+  margin-bottom : 1em; /* marge entre articles */ 
+  padding : 1em; /* marge intérieure */
+  border: 2px solid blue; /* bordure bleue */
+  border-radius: 25px; /* bordure arrondie */ 
+  box-shadow: 5px 5px grey; /* bordure avc ombre */
+  overflow:auto;   /* le contenu (l'image flottante entre autres) ne dépasse pas le contenant */
 }
 
 section img, section video {
-  width: 30%;
-  height: auto;
+  float : left; /* l'image à gauche avec le texte autour */
+  width: 25%; /* taille par défaut */
+  margin : 0 1em 1em 0; /* marge à droite et en bas de l'image pour que le texte ne soit pas collée */
 }
+
