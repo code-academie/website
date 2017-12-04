@@ -1,0 +1,30 @@
+body {
+  margin : 0;
+}
+
+header {
+  background-color: rgb(52, 152, 219);
+  color:white;
+  text-align : center;
+  padding: 1em;
+}
+
+header h1 {
+  font-size : 3em;
+}
+
+header h2 {
+  font-size : 2em;
+}
+
+nav {
+  float : left;
+  border: 1px solid red;
+  height: 100%;
+  width: 20%;
+}
+
+section img, section video {
+  width: 30%;
+  height: auto;
+}
