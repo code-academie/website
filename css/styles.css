@@ -1,3 +1,9 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body {
 	width: 100%;
 	color: #181818;
@@ -15,7 +21,7 @@ header {
 	color: #ecf0f1;
 	background-color: #1abc9c;
 	text-align: center;
-	/* 	border: 2px solid violet; */
+/* 	border: 2px solid violet; */
 }
 
 #logo {
@@ -66,7 +72,7 @@ nav ul a:hover {
 nav {
 	padding: 1em;
 	margin: 1em;
-	width: 10em;
+	min-width: 12em;
 	color: #ecf0f1;
 	background-color: #2980b9;
 	border-radius: 5px;
@@ -82,12 +88,10 @@ nav h2 {
 
 section {
 	padding: 1em;
-	width: 70%;
 	/* 	border: 2px solid red; */
 }
 
 section article {
-/* 	float: left; */
 	margin: 1em 1em 0 1em;
 	padding: 1em;
 	border-radius: 5px;
@@ -95,37 +99,32 @@ section article {
 }
 
 section article video {
-/* 	float: left; */
+	width: auto;
+	height: 200px;
+	padding: 1em;
+}
+
+section article img {
 	width: auto;
 	height: 120px;
 	padding: 1em;
 }
 
-section article img {
-/* 	float: left; */
-	width: auto;
-	height: 60px;
-	padding: 1em;
-}
-
 section h3 {
-/* 	float: left; */
 	width: auto;
 	height: 60px;
 	padding: 1em;
 }
 
 section p {
-/* 	float: left; */
 	width: auto;
-	height: 60px;
 	padding: 1em;
 }
 
 aside {
 	padding: 1em;
 	margin: 1em;
-	width: 10em;
+	min-width: 12em;
 	color: #ecf0f1;
 	border-radius: 5px;
 	box-shadow: 10px 10px 5px 0px #656565;
