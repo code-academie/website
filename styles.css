@@ -1,6 +1,7 @@
 body {
-  background-color: lightblue; /* couleur de fond de la page (astuce : c'est celle du menu) */
   margin : 0; /* pas de marge */
+  display: flex; /* On active flex sur le corps de la page */ 
+  flex-direction: column; /* disposition verticale : le header d'abord (car en premier dans l'html), puis les autres éléments en dessous */
 }
 
 header {
@@ -20,27 +21,34 @@ header h2 {
   margin:0; /* pas de marge autour du titre secondaire */
 }
 
-nav {
-  float:left; /* menu à gauche */
-  width: 10%; /* taille fixe relative */
+#contenu_principal {
+  display: flex; /* de nouveau on active flex pour le menu et les articles */
+  flex-direction: row; /* disposition horizontal : le menu à droite, puis les autres éléments en gauche (ordre de la page) */
 }
 
-section {
-  margin-left:10%; /* marge à gauche pour laisser la place au menu */
+#contenu_principal > nav {
+  order: -1; /* permet de garantir que le menu soit en premier même si le nav n'est pas en premier dans l'ordre de décalration du html   */
+  flex: 0 0 10vw; /* le menu a une largeur fixe de 10% de la largeur de la page */
+  background-color: lightblue; /* couleur du menu */
+}
+
+#contenu_principal > section {
   padding:1em; /* marge intérieure */
   background-color:white; /* les articles sur fond blanc */
+  display: flex; /* La section des articles est aussi en flex */
+  flex-direction: column; /* disposition verticale : les articles les uns en dessous des autres */
 }
 
-article {
+#contenu_principal > section article {
   margin-bottom : 1em; /* marge entre articles */ 
   padding : 1em; /* marge intérieure */
   border: 2px solid blue; /* bordure bleue */
   border-radius: 25px; /* bordure arrondie */ 
-  box-shadow: 5px 5px grey; /* bordure avc ombre */
+  box-shadow: 5px 5px grey; /* bordure avec ombre */
   overflow:auto;   /* le contenu (l'image flottante entre autres) ne dépasse pas le contenant */
 }
 
-section img, section video {
+#contenu_principal > section img, section video {
   float : left; /* l'image à gauche avec le texte autour */
   width: 25%; /* taille par défaut */
   margin : 0 1em 1em 0; /* marge à droite et en bas de l'image pour que le texte ne soit pas collée */
