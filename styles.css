@@ -1,5 +1,6 @@
 body {
   margin : 0; /* pas de marge */
+  min-height:100vh; /* si le contenu (1 seul article par exemple) est plus petit que l'écran, le body est fixé à la taille de l'écran */
   display: flex; /* On active flex sur le corps de la page */ 
   flex-direction: column; /* disposition verticale : le header d'abord (car en premier dans l'html), puis les autres éléments en dessous */
 }
@@ -22,7 +23,7 @@ header h2 {
 }
 
 #contenu_principal {
-  display: flex; /* de nouveau on active flex pour le menu et les articles */
+  display: flex; /* de nouveau on active flex pour le menu et les articles mais dans une autre direction */
   flex-direction: row; /* disposition horizontal : le menu à droite, puis les autres éléments en gauche (ordre de la page) */
 }
 
@@ -48,9 +49,9 @@ header h2 {
   overflow:auto;   /* le contenu (l'image flottante entre autres) ne dépasse pas le contenant */
 }
 
-#contenu_principal > section img, section video {
+#contenu_principal > section img, #contenu_principal >  section video {
   float : left; /* l'image à gauche avec le texte autour */
-  width: 25%; /* taille par défaut */
+  width: 25%; /* taille par défaut en pourcentage du conteneur parent (l'article) */
   margin : 0 1em 1em 0; /* marge à droite et en bas de l'image pour que le texte ne soit pas collée */
 }
 
