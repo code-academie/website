@@ -116,7 +116,6 @@ header > h2 { /* le titre h2 directement enfant de header */
 
 #contenu_principal > section h3 {
 	width: auto;
-/* 	height: 60px; */
 	padding: 1em;
 }
 
