@@ -55,10 +55,81 @@
       <!-- Contenu textuel de la page -->
       <article>
         <h3>Formulaire de contact</h3>
-        <p>
-          Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
-          ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
-        </p>
+        
+        <!--https://colorlib.com/wp/free-html5-contact-form-templates/-->
+        
+        <form action="mailto:bertrand.delion@free.fr?subject=[Code Académie] Demande d'information" enctype="text/plain" onsubmit="location.href='thanks.html';" method="post">
+          <fieldset>
+            <legend>
+              Information état civil
+            </legend>
+          <label for="nom" class="icon-user">Nom&nbsp;:&nbsp;</label>
+          <input type="text" name="nom" id="nom" required="required" placeholder="Votre Nom" />
+          <label for="prenom" class="icon-user">Prénom : </label>
+          <input type="text" name="prenom" id="prenom" required="required" placeholder="Votre Prénom" />
+           <p>
+            Sexe :
+            <input type="radio" name="sexe" id="homme" value="homme"/>
+            <label for="homme" class="icon-homme">Homme</label>
+            <input type="radio" name="sexe" id="femme" value="femme"/>
+            <label for="femme" class="icon-femme">Femme</label>
+          </p>
+          <label for="datenaissance" class="icon-birthday">Votre date de naissance : </label>
+          <input type="date" name="datenaissance" id="datenaissance" required="required" placeholder="jj/mm/aaaa" />
+          <label for="paysnaissance" class="icon-pays">Votre pays de naissance : </label>
+       <select name="pays" id="pays">
+           <optgroup label="Europe">
+
+               <option value="espagne">Espagne</option>
+
+               <option value="france" selected>France</option>
+
+               <option value="italie">Italie</option>
+
+               <option value="royaume-uni">Royaume-Uni</option>
+
+           </optgroup>
+
+           <optgroup label="Amérique">
+
+               <option value="canada">Canada</option>
+
+               <option value="etats-unis">Etats-Unis</option>
+
+           </optgroup>
+
+           <optgroup label="Asie">
+
+               <option value="chine">Chine</option>
+
+               <option value="japon">Japon</option>
+
+           </optgroup>
+       </select>
+            
+            
+          </fieldset>
+          <label for="email" class="icon-email">E-mail : </label>
+          <input type="email" name="email" id="email" required="required" placeholder="votre-email@domaine.fr" />
+          <label for="telephone" class="icon-phone">Téléphone : </label>
+          <input type="tel" name="telephone" id="telephone" required="required" placeholder="Votre numéro de téléphone" />
+          <label for="siteweb" class="icon-website">URL site web : </label>
+          <input type="url" name="siteweb" id="siteweb" required="required" placeholder="http://www.monsite.fr" />
+          <label for="message" class="icon-message">Message : </label>
+          <textarea name="message" id="message"></textarea>
+          
+          <p>
+            <label for="pseudo">Votre pseudo :</label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Zozor" size="30" maxlength="10" />
+          </p>
+          <p>
+            <label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon site ?</label><br />
+            <textarea name="ameliorer" id="ameliorer"></textarea>
+          </p>
+          
+          
+          <input class="sendButton" type="submit" name="Submit" value="Envoyer">
+        </form>
       </article>
     </section>
     <!-- Zone des articles - Fin déclaration -->
