@@ -1,0 +1,55 @@
+<FORM action="..." method="post">
+ <P>
+ <FIELDSET>
+  <LEGEND>Informations personnelles</LEGEND>
+  Nom : <INPUT name="personnel_nom" type="text" tabindex="1">
+  Prénom : <INPUT name="personnel_prenom" type="text" tabindex="2">
+  Adresse : <INPUT name="personnel_adresse" type="text" tabindex="3">
+  <em>...autres informations personnelles...</em>
+ </FIELDSET>
+ <FIELDSET>
+  <LEGEND>Historique médical</LEGEND>
+  <INPUT name="historique_maladie" 
+         type="checkbox" 
+         value="variole" tabindex="20"> Variole
+  <INPUT name="historique_maladie" 
+         type="checkbox" 
+         value="oreillons" tabindex="21"> Oreillons
+  <INPUT name="historique_maladie" 
+         type="checkbox" 
+         value="vertiges" tabindex="22"> Vertiges
+  <INPUT name="historique_maladie" 
+         type="checkbox" 
+         value="eternuements" tabindex="23"> Éternuements
+  <em>...autres épisodes médicaux...</em>
+ </FIELDSET>
+ <FIELDSET>
+  <LEGEND>Traitement courant</LEGEND>
+  Suivez-vous actuellement un traitement ? 
+  <INPUT name="traitement_actuel" 
+         type="radio" 
+         value="oui" tabindex="35">Oui
+  <INPUT name="traitement_actuel" 
+         type="radio" 
+         value="non" tabindex="35">Non
+
+  Si vous prenez des médicaments, veuillez les
+  inscrire dans l'espace ci-dessous :
+  <TEXTAREA name="medication_courante" 
+            rows="20" cols="50"
+            tabindex="40">
+  </TEXTAREA>
+ </FIELDSET>
+    <fieldset>
+  <legend>Destination</legend>
+  <p><label>Airport: <input type=text name=to list=airports></label></p>
+  <p><label>Departure time: <input type=datetime-local name=totime step=3600></label></p>
+</fieldset>
+<datalist id=airports>
+  <option value=ATL label="Atlanta">
+  <option value=MEM label="Memphis">
+  <option value=LHR label="London Heathrow">
+  <option value=LAX label="Los Angeles">
+  <option value=FRA label="Frankfurt">
+</datalist>
+</FORM>

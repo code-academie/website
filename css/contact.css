@@ -46,6 +46,17 @@
   text-align: center;
 }
 
+fieldset {
+  border: 2px solid #1F497D;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+}
+
+legend {
+  padding: 5px 10px;
+}
+
 /* #contact_form_titre::before {
   content: "";
   display: block;
@@ -58,7 +69,7 @@
   background-color: rgba(54, 84, 99, 0.7);
 } */
 
-#form_contact>h3 {
+# #form_contact>h3 {
   content: "";
   display: block;
   position: absolute;
