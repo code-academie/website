@@ -12,7 +12,8 @@
 
 #contact_form_titre {
   background-image: url(../images/contact-bckground.jpg);
-  width: 100%;
+  background-size: cover;
+/*   width: 100%;
   position: relative;
   z-index: 1;
   display: -webkit-box;
@@ -26,7 +27,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 64px 15px 64px 15px;
+  padding: 64px 15px 64px 15px; */
 }
 
 #contact_form_titre>h3 {
@@ -108,11 +109,12 @@ label {
   color: #999999;
   line-height: 1.2;
   padding-left: 2px;
+/*   display: inline; */
 }
 
 label::after {
   content: " : ";
-  display: inline;
+/*   display: inline; */
 }
 
 input {
