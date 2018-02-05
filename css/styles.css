@@ -1,5 +1,8 @@
 /* =-=-= Pour l'ensemble des objets de la page =-=-= */
 
+/* import de la police de caractère du titre de la page */
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
