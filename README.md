@@ -1,35 +1,18 @@
-[**Bertrand DELION**] Ma première ligne de documentation
+# Code Académie - Site Web
 
-Voici un mot *important* à mon sens
+Site Web créé lors des cours de de la Code Académie MAIF.
+Il nous sert de support pour nous exercer.
+Le projet est déclaré sous GitHub et développé grâce à l'IDE Web CodeAnywhere.
 
-*** Code Mardown ***
-*********************
+## Construit avec
 
-1. Item
-1. Item
-3. Item
-4. Item
+* [CodeAnywhere](https://codeanywhere.com/) - Un IDE Web
+* [RequestBin](https://requestb.in/) - Pour inspecter les requêtes HTTP
 
-# Titre de niveau 1
+## Versioning
 
-## Titre de niveau 2
+Nous utilisons [SemVer](http://semver.org/) pour le versioning. Pour les versions disponibles, voir [tags de ce projet](https://github.com/bdelion/website/tags). 
 
-### Titre de niveau 3
+## Auteurs
 
-> Ceci est un texte cité. Vous pouvez répondre
-> à cette citation en écrivant un paragraphe
-> normal juste en-dessous !
-
-Voici un code en C :
-
-    int main()
-    {
-        printf("Hello world!\n");
-        return 0;
-    }
-
-Rendez-vous sur le [Site du Zéro](http://www.siteduzero.com) pour tout apprendre à partir de Zéro !
-
------------------
-
-![Zozor](http://uploads.siteduzero.com/files/420001_421000/420263.png)
+* **Cédric, David & Stéphane** - *Initial work* - [Code Académie](https://github.com/code-academie/website)

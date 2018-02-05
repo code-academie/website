@@ -11,7 +11,7 @@
 }
 
 #contact_form_titre {
-  background-image: url(/images/contact-bckground.jpg);
+  background-image: url(../images/contact-bckground.jpg);
   width: 100%;
   position: relative;
   z-index: 1;
