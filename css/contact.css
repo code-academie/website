@@ -125,7 +125,7 @@ form {
 label {
   /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
   font-family: Calibri;
-  font-size: 18px;
+  font-size: 14px;
   color: #999999;
   line-height: 1.2;
   padding-left: 2px;
@@ -143,16 +143,16 @@ input {
   outline: none;
   border: none;
   width: 100%;
-  height: 50px;
+  height: 25px;
   background: transparent;
   font-family: Calibri;
-  font-size: 22px;
+  font-size: 14px;
   color: #555555;
   line-height: 1.2;
   padding: 0 2px;
   position: relative;
   border-bottom: 2px solid #dbdbdb;
-  margin-bottom: 45px;
+  margin-bottom: 10px;
 }
 
 input[type="submit"] {
