@@ -16,3 +16,4 @@ Nous utilisons [SemVer](http://semver.org/) pour le versioning. Pour les version
 ## Auteurs
 
 * **Cédric, David & Stéphane** - *Initial work* - [Code Académie](https://github.com/code-academie/website)
+* **Bertrand** - *Page principal, formulaire de contact, mise en page, ...*
