@@ -1,0 +1,178 @@
+/* =-=-= Pour l'ensemble des objets de la page =-=-= */
+
+/* import de la police de caractère du titre de la page */
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+* {
+	/* pour maîtriser width et flex-basis */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	/* On active flex sur le corps de la page */
+	display: flex;
+	/* correction bug IE de min-height non appliqué à body */
+	flex-direction: column;
+}
+
+/* =-=-= Pour le corps =-=-= */
+
+body {
+	/* crée un contexte flex pour ses enfants */
+	/* On active flex sur le corps de la page */
+	display: flex;
+	/* affichage vertical */
+	/* disposition verticale : le header d'abord (car en premier dans l'html), puis les autres éléments en dessous */
+	flex-direction: column;
+	/* toute la hauteur du viewport */
+	/* si le contenu (1 seul article par exemple) est plus petit que l'écran, le body est fixé à la taille de l'écran */
+	min-height: 100vh;
+	/* pas de marge */
+	margin: 0;
+	/* couleur pour le fond de la page */
+	background-color: #efe6dd;
+	/* couleur par défaut du texte de la page */
+	color: #181818;
+	/* police par défaut du texte de la page */
+	font-family: 'Calibri', sans-serif;
+}
+
+/* =-=-= Pour le contenu principal =-=-= */
+
+#contenu_principal {
+	/* crée un contexte flex pour ses enfants */
+	/* de nouveau on active flex pour le menu et les articles */
+	display: flex;
+	/* occupe la hauteur restante */
+/* 	flex: 1 1 auto; */
+	/* disposition horizontal : le menu à droite, puis les autres éléments en gauche (ordre de la page) */
+	flex-direction: row;
+	/* les items sont répartis de manière égale sur la ligne ; le premier est au début de la ligne, le dernier est à la fin */
+/* 	justify-content: space-between; */
+}
+
+/* le nav directement enfant de contenu_principal */
+#contenu_principal>nav {
+	/* permet de garantir que le menu soit en premier même si le nav n'est pas en premier dans l'ordre de décalration du html   */
+	/* nav s'affiche en premier */
+	order: -1;
+	/* le menu a une largeur fixe de 10% de la largeur de la page */
+/* 	flex: 0 0 10vw; */
+	
+	/* occupe la hauteur restante */
+/* 	flex: 1 1 auto; */
+	
+/* 	width: 10em; */
+/* 	min-width: 12em; */
+	color: #ecf0f1;
+	background-color: #2980b9;
+	margin: 1em;
+	padding: 1em;
+	/* bordure */
+	border: 2px solid white;
+	/* bordure arrondie */
+	border-radius: 5px;
+	/* bordure avec ombre */
+	box-shadow: 10px 10px 5px 0px #656565;
+}
+
+#contenu_principal>section {
+	/* marge intérieure */
+	padding: 1em;
+	/* La section des articles est aussi en flex */
+	display: flex;
+	/* occupe la hauteur restante */
+	flex: 100 100 auto;
+	/* disposition verticale : les articles les uns en dessous des autres */
+	flex-direction: column;
+}
+
+/* le aside directement enfant de contenu_principal */
+#contenu_principal>aside {
+	/* permet de garantir que le aside soit en dernier même si le aside n'est pas en dernier dans l'ordre de décalration du html   */
+	order: 999;
+	/* le menu a une largeur fixe de 10% de la largeur de la page */
+/* 	flex: 10 10 auto; */
+	
+/* 	min-width: 12em; */
+	color: #ecf0f1;
+	text-align: center;
+	background-color: #2c3e50;
+	margin: 1em;
+	padding: 1em;
+	/* bordure */
+	border: 2px solid white;
+	/* bordure arrondie */
+	border-radius: 5px;
+	/* bordure avec ombre */
+	box-shadow: 10px 10px 5px 0px #656565;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+nav,
+aside {
+	width: 10em;
+}
+
+article {
+	/* occupe la largeur restante */
+	flex: 1;
+}
+
+/* Responsive (fenêtres de moins de 640px) */
+
+@media (max-width: 640px) {
+	.wrapper {
+		/* affichage vertical */
+		flex-direction: column;
+	}
+	nav,
+	aside {
+		/* pour écraser la valeur 10em */
+		width: auto;
+	}
+	nav,
+	aside,
+	article {
+		/* pour écraser la valeur 0, due au flex: 1 */
+		flex-basis: auto;
+	}
+	nav {
+		/* nav reprend sa place */
+		order: 0;
+	}
+}
+
+/* Decoration */
+
+header,
+nav,
+aside,
+article,
+footer {
+	margin: .4em;
+	padding: 1em;
+	border-radius: 6px;
+}
+
+header {
+	background: #feb;
+}
+
+nav {
+	background: #ccf;
+}
+
+aside {
+	background: #ccf;
+}
+
+article {
+	background: #dd8;
+}
+
+footer {
+	background: #feb;
+}
