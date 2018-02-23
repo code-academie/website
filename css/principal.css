@@ -92,10 +92,16 @@ header>h2 {
 	/* crée un contexte flex pour ses enfants */
 	/* de nouveau on active flex pour le menu et les articles */
 	display: flex;
-	/* occupe la hauteur restante */
-	flex: 1 1 auto;
+	/* flex-grow = 0 : chaque enfant occupe la place nécessaire */
+	/* flex-shrink = 0 : chaque enfant n'est pas rétrécit */
+	/* flex-basis = auto :  taille par défaut d'un élément avant que l'espace restant soit réparti. */
+	flex: 0 0 auto;
 	/* disposition horizontal : le menu à droite, puis les autres éléments en gauche (ordre de la page) */
 	flex-direction: row;
+	/*  les items sont étirés jusqu'à remplir le container (tout en respectant min-width/max-width) */
+/* 	align-items: stretch; */
+	/*  l'item est placé au début de la ligne cross-start. */
+	align-items: flex-start;
 	/* les items sont répartis de manière égale sur la ligne ; le premier est au début de la ligne, le dernier est à la fin */
 	justify-content: space-between;
 }
@@ -138,8 +144,10 @@ header>h2 {
 	padding: 1em;
 	/* La section des articles est aussi en flex */
 	display: flex;
-	/* occupe la hauteur restante */
-	flex: 1 1 auto;
+	/* flex-grow = 0 : chaque enfant occupe la place nécessaire */
+	/* flex-shrink = 1 : chaque enfant est rétrécit */
+	/* flex-basis = auto :  taille par défaut d'un élément avant que l'espace restant soit réparti. */
+	flex: 0 1 auto;
 	/* disposition verticale : les articles les uns en dessous des autres */
 	flex-direction: column;
 	/* éléments étirés dans l'espace disponible */
