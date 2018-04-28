@@ -11,7 +11,7 @@
 <!--   <link rel="stylesheet" title="reset" type="text/css" href="css/html5reset-1.6.1.css" /> -->
   <link rel="stylesheet" title="reset" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
   <!-- Déclaration des ressources externes : CSS -->
-  <link rel="stylesheet" type="text/css" href="css/principal.css" />
+  <link rel="stylesheet" type="text/css" href="../css/principal.css" />
   <!-- Description du site pour moteur de recherche -->
   <meta name="description" content="Site de la Code Académie" />
   <meta name="keywords" content="code, académie, MAIF, HTML, CSS, JavaScript" />
@@ -23,7 +23,7 @@
   <header>
     <a href="/">
       <div id="logo">
-        <img src="images/icon.png" alt="Logo de la Code Académie" />
+        <img src="../images/icon.png" alt="Logo de la Code Académie" />
         <h1>Code Académie</h1>
       </div>
     </a>
@@ -37,13 +37,13 @@
     <nav>
       <h2>Menu</h2>
       <ul>
-        <li class="selected">Accueil</li>
+        <li><a href="../index.html">Accueil</a></li>
         <li><a href="#">Actu</a></li>
         <li><a href="#">Tableau</a></li>
         <li><a href="cours/20171019.html" target="_blank">Cours du 19/10/2017</a></li>
         <li>Cours JavaScript</li>
         <ul>
-          <li><a href="cours_JS/20180423.html">Exercice 23/04/2018 - Nb premiers</a></li>
+          <li class="selected">Exercice 23/04/2018 - Nb premiers</li>
         </ul>
         <li><a href="a_propos.html">A propos</a></li>
         <li><a href="contact.html">Nous contactez</a></li>
@@ -55,77 +55,59 @@
     <!-- Zone des articles - Début déclaration -->
     <section>
       <!-- Contenu textuel de la page -->
+      <h1>
+        Boucles & Nombres premiers
+      </h1>
+      <p>
+        https://github.com/code-academie/website/wiki/23-avril-2018
+      </p>
+      
       <article>
-        <video width="320" height="240" controls>
-            <source src="videos/operation-colibri_2017-10-16_11-00-35_129.mp4" type="video/mp4">
-            Votre navigateur ne prend pas en charge la balise vidéo.
-          </video>
-
-        <h3>Opération Colibri : "je fais ma part"</h3>
+        <img src="../images/javascript.png" alt="Logo JavaScript" />
+        <h3>while</h3>
         <p>
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
       </article>
-      
       <article>
-        <video width="320" height="240" controls>
-            <source src="http://sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
-            Votre navigateur ne prend pas en charge la balise vidéo.
-          </video>
-        <h3>Une autre vidéo exemple ... moins corporate</h3>
+        <img src="../images/javascript.png" alt="Logo JavaScript" />
+        <h3>for</h3>
         <p>
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
       </article>
-      
       <article>
-        <img src="images/stephane-daviet.png" alt="Photo de Stéphane DAVIET" />
-        <h3>26/09/2017</h3>
+        <img src="../images/javascript.png" alt="Logo JavaScript" />
+        <h3>for of</h3>
         <p>
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
       </article>
-      
       <article>
-        <img src="images/stephane-daviet.png" alt="Photo de Stéphane DAVIET" />
-        <h3>03/10/2017</h3>
+        <img src="../images/javascript.png" alt="Logo JavaScript" />
+        <h3>Array.forEach</h3>
         <p>
-          Unde Rufinus ea tempestate praefectus praetorio ad discrimen trusus est ultimum. ire enim ipse compellebatur ad militem, quem exagitabat inopia simul et feritas, et alioqui coalito more in ordinarias dignitates asperum semper et saevum, ut satisfaceret
-          atque monstraret, quam ob causam annonae convectio sit impedita.
+          Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
+          ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
       </article>
       <article>
-        <img src="images/stephane-daviet.png" alt="Photo de Stéphane DAVIET" />
-        <h3>10/10/2017</h3>
+        <img src="../images/javascript.png" alt="Logo JavaScript" />
+        <h3>Array.filter</h3>
         <p>
-          Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans, ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens perquisitor malivolus tandem desineret quieti
-          coalitos homines in aperta pericula proiectare.
+          Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
+          ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
       </article>
-
-
       <article>
-        <img src="images/cedric-dirand.png" alt="Photo de Cédric DIRAND" />
-        <h3>19/10/2017</h3>
+        <img src="../images/javascript.png" alt="Logo JavaScript" />
+        <h3>Array.map</h3>
         <p>
-          Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans, ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens perquisitor malivolus tandem desineret quieti
-          coalitos homines in aperta pericula proiectare.
-        </p>
-        <p>
-          Exercice du cours : <a href="cours/20171019.html" title="Exercice du cours du 19/10/2017" target="_blank">19/10/2017</a>
-        </p>
-      </article>
-
-
-      <article>
-        <img src="images/david-fradin.png" alt="Photo de David FRADIN" />
-        <h3>23/10/2017</h3>
-        <p>
-          Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans, ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens perquisitor malivolus tandem desineret quieti
-          coalitos homines in aperta pericula proiectare.
+          Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
+          ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
       </article>
     </section>
