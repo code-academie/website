@@ -1,0 +1,35 @@
+/* =-=-= Pour des éléments spécifiques liés aux pages des cours de JavaScript =-=-= */
+
+/* import de la police de caractère du titre du formulaire */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+
+section>h1 {
+	/* occupe la largeur restante */
+	flex: 1;
+  /* marge extérieure */
+	margin-bottom: 0em;
+  /* marge intérieure */
+	padding: 0.5em;
+  /* bordure
+	border: 2px solid #c0392b; */
+	/* bordure arrondie */
+	border-radius: 5px;
+	/* bordure avec ombre */
+	box-shadow: 10px 10px 5px 0px #656565;
+	/* le contenu (l'image flottante entre autres) ne dépasse pas le contenant */
+	overflow: auto;
+  /* police & couleurs */
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+	font-size: 1.5em;
+  color: #ecf0f1;
+  background-color: #e74c3c;
+	text-align: center;
+}
+
+/* Exercice du 23/04/2018 */
+.prime_number {
+	font-size: 0.7em;
+	margin-left: 20px;
+	
+}

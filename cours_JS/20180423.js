@@ -31,18 +31,15 @@ function primeNumberWhile() {
   while (i < tab.length) {
     isPrimeNumber = true;
     j = 1;
-    //TODEL console.log("-->" + tab[i]);
     while (j < i) {
-      //TODEL console.log("---->" + tab[j]);
-      //TODEL console.log("------>" + tab[i] % tab[j]);
       if (tab[i] % tab[j] === 0) {
         isPrimeNumber = false;
       }
       j++
     }
     if (isPrimeNumber) {
-      console.log(tab[i] + " est un nombre premier !")
-      result = result + '<li id="prime_number' + (i + 1) + '">' + tab[i] + '</li>'
+      console.log(tab[i] + " est un nombre premier !");
+      result = result + '<li class="prime_number">' + tab[i] + '</li>';
     }
     i++;
   }
@@ -64,17 +61,14 @@ function primeNumberFor() {
 
   for (i = 0; i < tab.length; i++) {
     isPrimeNumber = true;
-    //TODEL console.log("-->" + tab[i]);
     for (j = 1; j < i; j++) {
-      //TODEL console.log("---->" + tab[j]);
-      //TODEL console.log("------>" + tab[i] % tab[j]);
       if (tab[i] % tab[j] === 0) {
         isPrimeNumber = false;
       }
     }
     if (isPrimeNumber) {
-      console.log(tab[i] + " est un nombre premier !")
-      result = result + '<li id="prime_number' + (i + 1) + '">' + tab[i] + '</li>'
+      console.log(tab[i] + " est un nombre premier !");
+      result = result + '<li class="prime_number">' + tab[i] + '</li>';
     }
   }
 
@@ -95,18 +89,14 @@ function primeNumberForOf() {
   for (let element of tab) {
     isPrimeNumber = true;
     for (let primeNumber of tabResult) {
-      //TODEL console.log("---->" + element + "-" + primeNumber);
-      //TODEL console.log("------>" + element % primeNumber);
       if ((element % primeNumber === 0) && (primeNumber !== 1)) {
         isPrimeNumber = false;
       }
-      //TODEL console.log("------>" + isPrimeNumber);
     }
     if (isPrimeNumber) {
-      console.log(element + " est un nombre premier !")
+      console.log(element + " est un nombre premier !");
       tabResult.push(element);
-      result = result + '<li id="prime_number' + primeNumber + '">' + primeNumber + '</li>'
-      //TODEL result = result + '<li id="prime_number' + (i + 1) + '">' + tab[i] + '</li>'
+      result = result + '<li class="prime_number">' + element + '</li>';
     }
   }
 
@@ -132,16 +122,11 @@ function primeNumberArrayforEach() {
       }
     }
     if (isPrimeNumber) {
-      console.log(element + " est un nombre premier !")
+      console.log(element + " est un nombre premier !");
       tabResult.push(element);
-      result = result + '<li id="prime_number' + element + '">' + element + '</li>'
-      //TODEL result = result + '<li id="prime_number' + (i + 1) + '">' + tab[i] + '</li>'
+      result = result + '<li class="prime_number">' + element + '</li>';
     }
   })
-
-  /*TODEL for (let primeNumber of tabResult) {
-    result = result + '<li id="prime_number' + primeNumber + '">' + primeNumber + '</li>'
-  }*/
 
   // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
   list.innerHTML = result;
@@ -154,18 +139,14 @@ var tabResult = [];
 
 function primeNumber(elt, index, tab) {
   isPrimeNumber = true;
-  //TODEL console.log("->" + elt);
-  //TODEL console.log("--->" + index);
 
   for (i = 0; i < index; i++) {
-    //TODEL console.log("----->" + tab[i]);
-    //TODEL console.log("----->" + elt % tab[i]);
     if ((elt % tab[i] === 0) && (tab[i] !== 1)) {
       isPrimeNumber = false;
     }
   }
   if (isPrimeNumber) {
-    console.log(elt + " est un nombre premier !")
+    console.log(elt + " est un nombre premier !");
     return elt;
   }
 }
@@ -179,7 +160,7 @@ function primeNumberArrayfilter() {
   console.log(tabResult);
 
   for (let primeNumber of tabResult) {
-    result = result + '<li id="prime_number' + primeNumber + '">' + primeNumber + '</li>'
+    result = result + '<li class="prime_number">' + primeNumber + '</li>';
   }
 
   // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
@@ -190,30 +171,18 @@ function primeNumberArrayfilter() {
 Affichage des nombres premiers avec la boucle Array.map
 */
 function primeNumberArraymap() {
-  var tab = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-  var tabResult = [];
-  var isPrimeNumber = true;
+  var tab = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
   var list = document.getElementById("resultArraymap");
   var result = "La listes des nombres premiers :";
+  
+  const tabResult = tab.map(primeNumber);
+  console.log(tabResult);
 
-  tab.forEach(function(element) {
-    isPrimeNumber = true;
-    for (let primeNumber of tabResult) {
-      if ((element % primeNumber === 0) && (primeNumber !== 1)) {
-        isPrimeNumber = false;
-      }
+  for (let primeNumber of tabResult) {
+    if (primeNumber !== undefined) {
+      result = result + '<li class="prime_number">' + primeNumber + '</li>';
     }
-    if (isPrimeNumber) {
-      console.log(element + " est un nombre premier !")
-      tabResult.push(element);
-      result = result + '<li id="prime_number' + element + '">' + element + '</li>'
-      //TODEL result = result + '<li id="prime_number' + (i + 1) + '">' + tab[i] + '</li>'
-    }
-  })
-
-  /*TODEL for (let primeNumber of tabResult) {
-    result = result + '<li id="prime_number' + primeNumber + '">' + primeNumber + '</li>'
-  }*/
+  }
 
   // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
   list.innerHTML = result;
