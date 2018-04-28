@@ -105,13 +105,113 @@ function primeNumberForOf() {
     if (isPrimeNumber) {
       console.log(element + " est un nombre premier !")
       tabResult.push(element);
+      result = result + '<li id="prime_number' + primeNumber + '">' + primeNumber + '</li>'
       //TODEL result = result + '<li id="prime_number' + (i + 1) + '">' + tab[i] + '</li>'
     }
   }
 
-  for (let primeNumber of tabResult) {
+  /*TODEL for (let primeNumber of tabResult) {
     result = result + '<li id="prime_number' + primeNumber + '">' + primeNumber + '</li>'
-  }
+  }*/
+
+  // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
+  list.innerHTML = result;
+}
+
+/*
+Affichage des nombres premiers avec la boucle Array.forEach
+*/
+function primeNumberArrayforEach() {
+  var tab = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  var tabResult = [];
+  var isPrimeNumber = true;
+  var list = document.getElementById("resultArrayforEach");
+  var result = "La listes des nombres premiers :";
+
+  tab.forEach(function(element) {
+    isPrimeNumber = true;
+    for (let primeNumber of tabResult) {
+      if ((element % primeNumber === 0) && (primeNumber !== 1)) {
+        isPrimeNumber = false;
+      }
+    }
+    if (isPrimeNumber) {
+      console.log(element + " est un nombre premier !")
+      tabResult.push(element);
+      result = result + '<li id="prime_number' + element + '">' + element + '</li>'
+      //TODEL result = result + '<li id="prime_number' + (i + 1) + '">' + tab[i] + '</li>'
+    }
+  })
+
+  /*TODEL for (let primeNumber of tabResult) {
+    result = result + '<li id="prime_number' + primeNumber + '">' + primeNumber + '</li>'
+  }*/
+
+  // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
+  list.innerHTML = result;
+}
+
+/*
+Affichage des nombres premiers avec la boucle Array.filter
+*/
+function primeNumberArrayfilter() {
+  var tab = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  var tabResult = [];
+  var isPrimeNumber = true;
+  var list = document.getElementById("resultArrayfilter");
+  var result = "La listes des nombres premiers :";
+
+  tab.forEach(function(element) {
+    isPrimeNumber = true;
+    for (let primeNumber of tabResult) {
+      if ((element % primeNumber === 0) && (primeNumber !== 1)) {
+        isPrimeNumber = false;
+      }
+    }
+    if (isPrimeNumber) {
+      console.log(element + " est un nombre premier !")
+      tabResult.push(element);
+      result = result + '<li id="prime_number' + element + '">' + element + '</li>'
+      //TODEL result = result + '<li id="prime_number' + (i + 1) + '">' + tab[i] + '</li>'
+    }
+  })
+
+  /*TODEL for (let primeNumber of tabResult) {
+    result = result + '<li id="prime_number' + primeNumber + '">' + primeNumber + '</li>'
+  }*/
+
+  // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
+  list.innerHTML = result;
+}
+
+/*
+Affichage des nombres premiers avec la boucle Array.map
+*/
+function primeNumberArraymap() {
+  var tab = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  var tabResult = [];
+  var isPrimeNumber = true;
+  var list = document.getElementById("resultArraymap");
+  var result = "La listes des nombres premiers :";
+
+  tab.forEach(function(element) {
+    isPrimeNumber = true;
+    for (let primeNumber of tabResult) {
+      if ((element % primeNumber === 0) && (primeNumber !== 1)) {
+        isPrimeNumber = false;
+      }
+    }
+    if (isPrimeNumber) {
+      console.log(element + " est un nombre premier !")
+      tabResult.push(element);
+      result = result + '<li id="prime_number' + element + '">' + element + '</li>'
+      //TODEL result = result + '<li id="prime_number' + (i + 1) + '">' + tab[i] + '</li>'
+    }
+  })
+
+  /*TODEL for (let primeNumber of tabResult) {
+    result = result + '<li id="prime_number' + primeNumber + '">' + primeNumber + '</li>'
+  }*/
 
   // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
   list.innerHTML = result;
