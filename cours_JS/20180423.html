@@ -8,7 +8,7 @@
   <!-- Description de l'encodage utilisé (pour les caractères accentués) -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <!-- Reset StyleSheet -->
-<!--   <link rel="stylesheet" title="reset" type="text/css" href="css/html5reset-1.6.1.css" /> -->
+  <!--   <link rel="stylesheet" title="reset" type="text/css" href="css/html5reset-1.6.1.css" /> -->
   <link rel="stylesheet" title="reset" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
   <!-- Déclaration des ressources externes : CSS -->
   <link rel="stylesheet" type="text/css" href="../css/principal.css" />
@@ -61,11 +61,15 @@
       <p>
         https://github.com/code-academie/website/wiki/23-avril-2018
       </p>
-      
+      <button type="button" onclick="afficherAlerte('Alerte test direct !');">Alerte directe !</button>
+      <button type="button" onclick="afficherAlerteExt('Alerte test externe !');">Alerte externe !</button>
+      <button type="button" onclick="afficherConsole();">Affichage console</button>
+
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>while</h3>
-        <p>
+        <button type="button" onclick="primeNumberWhile();">Affichage console</button>
+        <p id="resultWhile">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
@@ -128,7 +132,9 @@
     <p>Copyright Bertrand DELION - Tous droits réservés<br /> Code &amp; design par <a href="mailto:bertrand.delion@free.fr">fifiz</a></p>
   </footer>
   <!-- Pied de page - Fin déclaration -->
-
+  <script type="text/javascript" src="../javascript/mon-script-test.js"></script>
+  <script type="text/javascript" src="mon-script-test.js"></script>
+  <script type="text/javascript" src="20180423.js"></script>
 </body>
 
 </html>
