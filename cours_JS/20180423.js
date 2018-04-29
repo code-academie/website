@@ -183,7 +183,7 @@ function primeNumberArraymap() {
       result = result + '<li class="prime_number">' + primeNumber + '</li>';
     }
   }
-
+  
   // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
   list.innerHTML = result;
 }
