@@ -1,35 +1,117 @@
 /* =-=-= Pour des éléments spécifiques liés aux pages des cours de JavaScript =-=-= */
 
 /* import de la police de caractère du titre du formulaire */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
 section>h1 {
-	/* occupe la largeur restante */
-	flex: 1;
+  /* occupe la largeur restante */
+  flex: 1;
   /* marge extérieure */
-	margin-bottom: 0em;
+  margin-bottom: 0em;
   /* marge intérieure */
-	padding: 0.5em;
+  padding: 0.5em;
   /* bordure
 	border: 2px solid #c0392b; */
-	/* bordure arrondie */
-	border-radius: 5px;
-	/* bordure avec ombre */
-	box-shadow: 10px 10px 5px 0px #656565;
-	/* le contenu (l'image flottante entre autres) ne dépasse pas le contenant */
-	overflow: auto;
+  /* bordure arrondie */
+  border-radius: 5px;
+  /* bordure avec ombre */
+  box-shadow: 10px 10px 5px 0px #656565;
+  /* le contenu (l'image flottante entre autres) ne dépasse pas le contenant */
+  overflow: auto;
   /* police & couleurs */
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
-	font-size: 1.5em;
+  font-size: 1.5em;
   color: #ecf0f1;
   background-color: #e74c3c;
-	text-align: center;
+  text-align: center;
+}
+
+details {
+  margin: 15px;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+summary::after {
+  content: "+";
+  color: #fff;
+  float: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: -5px 5px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 20px;
+}
+
+summary {
+  display: block;
+  background: #7f8c8d;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+details[open] summary:after {
+  content: "-";
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  font-family: Ubuntu;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 13px;
+}
+
+input {
+  display: block;
+  font-family: Ubuntu;
+  font-size: 15px;
+  color: #555555;
+  background: transparent;
+  line-height: 1.2;
+  border: none;
+  height: 45px;
+  width: 100%;
+  padding: 0 5px;
+  border-bottom: 1px solid #b2b2b2;
+  margin-bottom: 26px;
+}
+
+input.sendButton {
+  border: none;
+  font-family: Ubuntu;
+  font-size: 15px;
+  background-color: #57b846;
+  border-radius: 25px;
+  color: #fff;
+  transition: all 0.4s;
+  justify-content: center;
+  align-items: center;
+}
+
+input.sendButton:hover {
+  cursor: pointer;
+  background-color: #333333;
 }
 
 /* Exercice du 23/04/2018 */
+
 .prime_number {
-	font-size: 0.7em;
-	margin-left: 20px;
-	
+  font-size: 0.7em;
+  margin-left: 20px;
 }

@@ -174,7 +174,7 @@ function primeNumberArraymap() {
   var tab = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
   var list = document.getElementById("resultArraymap");
   var result = "La listes des nombres premiers :";
-  
+
   const tabResult = tab.map(primeNumber);
   console.log(tabResult);
 
@@ -183,7 +183,47 @@ function primeNumberArraymap() {
       result = result + '<li class="prime_number">' + primeNumber + '</li>';
     }
   }
+
+  // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
+  list.innerHTML = result;
+}
+
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
+/*
+Affichage des x premiers nombres premiers inférieurs à une borne
+*/
+function primeNumberFirstOne(borne) {
+  var list = document.getElementById("resultBonus");
+  var result = "La listes des nombres premiers :";
+
+  // on indique que le calcul est en court
+  list.innerHTML = "Calcul en cours ...";
+
+  sleep(2000);
   
+  for (i = 2; i <= borne; i++) {
+    var j = 1;
+    var racine = Math.floor(Math.sqrt(i));
+
+    do {
+      j++;
+    } while (j <= racine && i % j !== 0);
+    
+    // nombre premier trouvé
+    if (j > racine) {
+      result = result + '<li class="prime_number">' + i + '</li>';
+    }
+  }
+
   // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
   list.innerHTML = result;
 }
