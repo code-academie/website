@@ -64,11 +64,7 @@
         <summary>Enoncé de l'exercice</summary>
         <a href="https://github.com/code-academie/website/wiki/23-avril-2018" target="_blank">code-academie/website/wiki/23-avril-2018</a>
       </details>
-
-      <button type="button" onclick="afficherAlerte('Alerte test direct !');">Alerte directe !</button>
-      <button type="button" onclick="afficherAlerteExt('Alerte test externe !');">Alerte externe !</button>
-      <button type="button" onclick="afficherConsole();">Affichage console</button>
-
+      
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>while</h3>
@@ -126,7 +122,7 @@
       <article>
         <img src="../images/gift-box-in-hand-flat-icon-01-.jpg" alt="Logo Cadeau" />
         <h3>Bonus</h3>
-        <form name="form_primeNumber" action="javascript:void(0);" enctype="text/plain" onclick="return primeNumberFirstOne(borne.value);" method="post">
+        <form name="form_primeNumber" action="javascript:void(0);" enctype="text/plain" onsubmit="return primeNumberFirstOne(borne.value);" method="post">
           <filedset>
             <legend>Calcul des x premiers nombre premier</legend>
             <label for="borne">Borne maximale</label><input type="number" name="borne" id="borne" required placeholder="Votre borne de calcul" />
@@ -156,7 +152,7 @@
     <p>Copyright Bertrand DELION - Tous droits réservés<br /> Code &amp; design par <a href="mailto:bertrand.delion@free.fr">fifiz</a></p>
   </footer>
   <!-- Pied de page - Fin déclaration -->
-  <script type="text/javascript" src="../javascript/mon-script-test.js"></script>
+  <script type="text/javascript" src="../js/mon-script-test-ext.js"></script>
   <script type="text/javascript" src="mon-script-test.js"></script>
   <script type="text/javascript" src="20180423.js"></script>
 </body>
