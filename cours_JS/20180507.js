@@ -1,53 +1,73 @@
-function extractSort() {
-  var entry = ["toto", "45", "toti", "13", "2342"];
+/*
+Nouvel exercice pour manipuler les fonctions map/fiter/sort
+    Créer un tableau ["Eere", "45" , "ere", "13", "ZZZ", "2342"];
+    Filter dans le tableau uniquement les chaîne de caractère ne comportant que des nombres (/^\d+$/.test(val) renvoie true si val contient uniquement des nombres)
+    Transformer le tableau en un tableau d'entier (parseInt())
+    Trier le tableau par ordre croissant des entiers
+*/
+/*
+Affichage des résultats des calculs
+*/
+"use strict";
+
+function DisplayResult(eltById, tabEntry = ["toto", "45", "toti", "13", "2342"]) {
+  var tabSorted = [];
+  var list = document.getElementById(eltById);
+  var result = "";
+
+  switch (eltById) {
+    case 'resultExtractSort':
+      tabSorted = ExtractSort(tabEntry);
+      break;
+    case 'resultExtractSortLambda':
+      tabSorted = ExtractSortLambda(tabEntry);
+      break;
+    default:
+      tabSorted = ["vide"];
+  }
+  console.log(eltById + " -> " + Array.from(tabSorted));
+  result = result + `<p>Il a été trié ${tabSorted.length} nombres entiers :</p><ol>`;
+  for (let element of tabSorted) {
+    result = result + `<li class="prime_number">${element}</li>`;
+  }
+  result = result + `</ol>`;
+  // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
+  list.innerHTML = result;
+}
+
+/*
+Extraction et tri des entiers d'un tableau
+*/
+function ExtractSort(entry) {
+  "use strict";
   var resultFilter = [];
   var resultMap = [];
   var resultSort = [];
-  var list = document.getElementById("resultExtractSort");
-  var outPut = `${entry} devient un tableau de nombre triés :`;
 
   resultFilter = entry.filter(function(elt) {
     var regExp = /^\d+$/;
-
-    console.log(regExp.test(elt));
     return regExp.test(elt);
-    //retur booleen
   })
 
   resultMap = resultFilter.map(function(elt) {
-    console.log(parseInt(elt));
-    return parseInt(elt)
+    return parseInt(elt, 10);
   })
 
   resultSort = resultMap.sort(function(a, b) {
-    console.log(a + ":" + b);
     return a - b;
   })
-
-  for (let eltFiltered of resultSort) {
-    console.log(eltFiltered + " est de type " + typeof(eltFiltered));
-    outPut = outPut + `<li class="prime_number">${eltFiltered}</li>`;
-  }
-  // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
-  list.innerHTML = outPut;
+  return resultSort;
 }
 
-function extractSortLambda() {
-  var entry = ["toto", "45", "toti", "13", "2342"];
-  var resultFilter = [];
-  var resultMap = [];
+/*
+Extraction et tri des entiers d'un tableau uniquement avec des Lambda
+*/
+function ExtractSortLambda(entry) {
+  "use strict";
   var resultSort = [];
-  var list = document.getElementById("resultExtractSortLambda");
-  var outPut = "Tableau d'Integer triés :";
 
-  resultSort = entry.filter(elt => /^\d+$/.test(elt))
-                    .map(elt => parseInt(elt))
-                    .sort((a, b) =>  a - b);
-
-  for (let eltFiltered of resultSort) {
-    console.log(eltFiltered + " est de type " + typeof(eltFiltered));
-    outPut = outPut + `<li class="prime_number">${eltFiltered}</li>`;
-  }
-  // une fois la chaine crée on la rajoute à la page. C'est l'opération la plus coûteuse du script.
-  list.innerHTML = outPut;
+  return resultSort = entry
+    .filter(elt => /^\d+$/.test(elt))
+    .map(elt => parseInt(elt, 10))
+    .sort((a, b) => a - b);
 }
