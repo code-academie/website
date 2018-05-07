@@ -151,19 +151,20 @@ function primeNumberArrayfilter() {
   var list = document.getElementById("resultArrayfilter");
   var result = "La listes des nombres premiers :";
 
-  tabPrimeNumber = tab.filter(function(elt, index, tab) {
+  tabPrimeNumber = tab.filter(function(elt, index, tabE) {
     var i;
     var isPrimeNumber = true;
 
     for (i = 1; i < index && isPrimeNumber; i++) {
-      if (elt % tab[i] === 0) {
+      if (elt % tabE[i] === 0) {
         isPrimeNumber = false;
       }
     }
     if (isPrimeNumber) {
       console.log(elt + " est un nombre premier !");
-      return elt;
     }
+    return isPrimeNumber;
+    
   })
 
   for (let primeNumber of tabPrimeNumber) {
@@ -197,13 +198,13 @@ function primeNumberArraymap() {
     }
     if (isPrimeNumber) {
       console.log(elt + " est un nombre premier !");
+      return elt;
     }
-    return isPrimeNumber;
   });
   console.log(tabPrimeNumber);
 
   for (j = 0; j < tab.length; j++) {
-    if (tabPrimeNumber[j] === true) {
+    if (typeof(tabPrimeNumber[j]) !== "undefined") {
       result = result + `<li class="prime_number">${tab[j] }</li>`;
     }
   }
