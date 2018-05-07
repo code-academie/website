@@ -68,7 +68,7 @@
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>while</h3>
-        <button type="button" onclick="primeNumberWhile();">Affichage</button>
+        <button type="button" onclick="DisplayResult('resultWhile');">Affichage</button>
         <p id="resultWhile">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
@@ -77,7 +77,7 @@
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>for</h3>
-        <button type="button" onclick="primeNumberFor();">Affichage</button>
+        <button type="button" onclick="DisplayResult('resultFor');">Affichage</button>
         <p id="resultFor">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
@@ -86,7 +86,7 @@
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>for of</h3>
-        <button type="button" onclick="primeNumberForOf();">Affichage</button>
+        <button type="button" onclick="DisplayResult('resultForOf');">Affichage</button>
         <p id="resultForOf">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
@@ -95,7 +95,7 @@
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>Array.forEach</h3>
-        <button type="button" onclick="primeNumberArrayforEach();">Affichage</button>
+        <button type="button" onclick="DisplayResult('resultArrayforEach');">Affichage</button>
         <p id="resultArrayforEach">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
@@ -104,7 +104,7 @@
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>Array.prototype.filter</h3>
-        <button type="button" onclick="primeNumberArrayfilter();">Affichage</button>
+        <button type="button" onclick="DisplayResult('resultArrayfilter');">Affichage</button>
         <p id="resultArrayfilter">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
@@ -113,7 +113,7 @@
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>Array.prototype.map</h3>
-        <button type="button" onclick="primeNumberArraymap();">Affichage</button>
+        <button type="button" onclick="DisplayResult('resultArraymap');">Affichage</button>
         <p id="resultArraymap">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
@@ -122,7 +122,7 @@
       <article>
         <img src="../images/gift-box-in-hand-flat-icon-01-.jpg" alt="Logo Cadeau" />
         <h3>Bonus</h3>
-        <form name="form_primeNumber" action="javascript:void(0);" enctype="text/plain" onsubmit="return primeNumberFirstOne(borne.value);" method="post">
+        <form name="form_primeNumber" action="javascript:void(0);" enctype="text/plain" onsubmit="DisplayResult('resultBonus', borne.value);" method="post">
           <filedset>
             <legend>Calcul des x premiers nombre premier</legend>
             <label for="borne">Borne maximale</label><input type="number" name="borne" id="borne" required placeholder="Votre borne de calcul" />
