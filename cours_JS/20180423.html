@@ -8,10 +8,12 @@
   <!-- Description de l'encodage utilisé (pour les caractères accentués) -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <!-- Reset StyleSheet -->
-<!--   <link rel="stylesheet" title="reset" type="text/css" href="css/html5reset-1.6.1.css" /> -->
+  <!--   <link rel="stylesheet" title="reset" type="text/css" href="css/html5reset-1.6.1.css" /> -->
   <link rel="stylesheet" title="reset" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
   <!-- Déclaration des ressources externes : CSS -->
   <link rel="stylesheet" type="text/css" href="../css/principal.css" />
+  <!-- Déclaration des ressources externes : CSS spécifiques aux Cours de Java Script -->
+  <link rel="stylesheet" type="text/css" href="../css/cours_JS.css" />
   <!-- Description du site pour moteur de recherche -->
   <meta name="description" content="Site de la Code Académie" />
   <meta name="keywords" content="code, académie, MAIF, HTML, CSS, JavaScript" />
@@ -40,15 +42,15 @@
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="#">Actu</a></li>
         <li><a href="#">Tableau</a></li>
-        <li><a href="cours/20171019.html" target="_blank">Cours du 19/10/2017</a></li>
+        <li><a href="../cours/20171019.html" target="_blank">Cours du 19/10/2017</a></li>
         <li>Cours JavaScript</li>
         <ul>
           <li class="selected">Exercice 23/04/2018 - Nb premiers</li>
           <li><a href="20180507.html">Exercice 07/05/2018 - Filter, Map & Sort</a></li>
         </ul>
-        <li><a href="a_propos.html">A propos</a></li>
-        <li><a href="contact.html">Nous contactez</a></li>
-        <li><a href="contact_min.html">Nous contactez [formulaire minimaliste]</a></li>
+        <li><a href="../a_propos.html">A propos</a></li>
+        <li><a href="../contact.html">Nous contactez</a></li>
+        <li><a href="../contact_min.html">Nous contactez [formulaire minimaliste]</a></li>
       </ul>
     </nav>
     <!-- Menu de navigation - Fin déclaration -->
@@ -57,16 +59,18 @@
     <section>
       <!-- Contenu textuel de la page -->
       <h1>
-        Boucles & Nombres premiers
+        Boucles &amp; Nombres premiers
       </h1>
-      <p>
-        https://github.com/code-academie/website/wiki/23-avril-2018
-      </p>
+      <details>
+        <summary>Enoncé de l'exercice</summary>
+        <a href="https://github.com/code-academie/website/wiki/23-avril-2018" target="_blank">code-academie/website/wiki/23-avril-2018</a>
+      </details>
       
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>while</h3>
-        <p>
+        <button type="button" onclick="DisplayResult('resultWhile');">Affichage</button>
+        <p id="resultWhile">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
@@ -74,7 +78,8 @@
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>for</h3>
-        <p>
+        <button type="button" onclick="DisplayResult('resultFor');">Affichage</button>
+        <p id="resultFor">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
@@ -82,7 +87,8 @@
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>for of</h3>
-        <p>
+        <button type="button" onclick="DisplayResult('resultForOf');">Affichage</button>
+        <p id="resultForOf">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
@@ -90,23 +96,41 @@
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
         <h3>Array.forEach</h3>
-        <p>
+        <button type="button" onclick="DisplayResult('resultArrayforEach');">Affichage</button>
+        <p id="resultArrayforEach">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
       </article>
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
-        <h3>Array.filter</h3>
-        <p>
+        <h3>Array.prototype.filter</h3>
+        <button type="button" onclick="DisplayResult('resultArrayfilter');">Affichage</button>
+        <p id="resultArrayfilter">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
       </article>
       <article>
         <img src="../images/javascript.png" alt="Logo JavaScript" />
-        <h3>Array.map</h3>
-        <p>
+        <h3>Array.prototype.map</h3>
+        <button type="button" onclick="DisplayResult('resultArraymap');">Affichage</button>
+        <p id="resultArraymap">
+          Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
+          ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
+        </p>
+      </article>
+      <article>
+        <img src="../images/gift-box-in-hand-flat-icon-01-.jpg" alt="Logo Cadeau" />
+        <h3>Bonus</h3>
+        <form name="form_primeNumber" action="javascript:void(0);" enctype="text/plain" onsubmit="DisplayResult('resultBonus', borne.value);" method="post">
+          <filedset>
+            <legend>Calcul des x premiers nombre premier</legend>
+            <label for="borne">Borne maximale</label><input type="number" name="borne" id="borne" required placeholder="Votre borne de calcul" />
+            <input class="sendButton" type="submit" name="Submit" value="Calculer">
+          </filedset>
+        </form>
+        <p id="resultBonus">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
@@ -129,7 +153,8 @@
     <p>Copyright Bertrand DELION - Tous droits réservés<br /> Code &amp; design par <a href="mailto:bertrand.delion@free.fr">fifiz</a></p>
   </footer>
   <!-- Pied de page - Fin déclaration -->
-
+  <script type="text/javascript" src="../js/mon-script-test-ext.js"></script>
+  <script type="text/javascript" src="20180423.js"></script>
 </body>
 
 </html>
