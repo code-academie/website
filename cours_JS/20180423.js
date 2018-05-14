@@ -198,6 +198,9 @@ function primeNumberArraymap(tab) {
     if (isPrimeNumber) {
       return elt;
     }
+  })
+  .filter(function(elt) {
+    return (elt !== undefined);
   });
   return tabPrimeNumber;
 }
