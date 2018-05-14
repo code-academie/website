@@ -26,19 +26,19 @@ function DisplayResult(eltById, maxNum = 0) {
       tabPrimeNumber = primeNumberWhile(tab);
       break;
     case 'resultFor':
-      tabPrimeNumber = primeNumberWhile(tab);
+      tabPrimeNumber = primeNumberFor(tab);
       break;
     case 'resultForOf':
-      tabPrimeNumber = primeNumberWhile(tab);
+      tabPrimeNumber = primeNumberForOf(tab);
       break;
     case 'resultArrayforEach':
-      tabPrimeNumber = primeNumberWhile(tab);
+      tabPrimeNumber = primeNumberArrayforEach(tab);
       break;
     case 'resultArrayfilter':
-      tabPrimeNumber = primeNumberWhile(tab);
+      tabPrimeNumber = primeNumberArrayfilter(tab);
       break;
     case 'resultArraymap':
-      tabPrimeNumber = primeNumberWhile(tab);
+      tabPrimeNumber = primeNumberArraymap(tab);
       break;
     case 'resultBonus':
       tabPrimeNumber = primeNumberFirstOne(maxNum);
