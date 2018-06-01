@@ -90,7 +90,7 @@ legend {
   background-color: rgba(54, 84, 99, 0.7);
 } */
 
-# #form_contact>h3 {
+#form_contact>h3 {
   content: "";
   display: block;
   position: absolute;
