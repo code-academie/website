@@ -22,25 +22,25 @@ function DisplayResult(eltById, maxNum = 0) {
   var result = "";
 
   switch (eltById) {
-    case 'resultWhile':
+    case "resultWhile":
       tabPrimeNumber = primeNumberWhile(tab);
       break;
-    case 'resultFor':
+    case "resultFor":
       tabPrimeNumber = primeNumberFor(tab);
       break;
-    case 'resultForOf':
+    case "resultForOf":
       tabPrimeNumber = primeNumberForOf(tab);
       break;
-    case 'resultArrayforEach':
+    case "resultArrayforEach":
       tabPrimeNumber = primeNumberArrayforEach(tab);
       break;
-    case 'resultArrayfilter':
+    case "resultArrayfilter":
       tabPrimeNumber = primeNumberArrayfilter(tab);
       break;
-    case 'resultArraymap':
+    case "resultArraymap":
       tabPrimeNumber = primeNumberArraymap(tab);
       break;
-    case 'resultBonus':
+    case "resultBonus":
       tabPrimeNumber = primeNumberFirstOne(maxNum);
       break;
     default:
@@ -77,7 +77,7 @@ function primeNumberWhile(tab) {
       if (tab[i] % tabPrimeNumber[j] === 0) {
         isPrimeNumber = false;
       }
-      j++
+      j++;
     }
     //si le nb est premier, on l'ajoute au tableau des nb premiers
     if (isPrimeNumber) {
@@ -149,7 +149,7 @@ function primeNumberArrayforEach(tab) {
       if ((element % primeNumber === 0) && (primeNumber !== 1)) {
         isPrimeNumber = false;
       }
-    })
+    });
     if (isPrimeNumber) {
       tabPrimeNumber.push(element);
     }
