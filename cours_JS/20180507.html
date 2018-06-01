@@ -8,11 +8,12 @@
   <!-- Description de l'encodage utilisé (pour les caractères accentués) -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <!-- Reset StyleSheet -->
-<!--   <link rel="stylesheet" title="reset" type="text/css" href="css/html5reset-1.6.1.css" /> -->
+  <!--   <link rel="stylesheet" title="reset" type="text/css" href="css/html5reset-1.6.1.css" /> -->
   <link rel="stylesheet" title="reset" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
-  <!-- Déclaration des ressources externes : CSS -->  
-<!--   <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
-  <link rel="stylesheet" type="text/css" href="css/_flex-style.css" />
+  <!-- Déclaration des ressources externes : CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/principal.css" />
+  <!-- Déclaration des ressources externes : CSS spécifiques aux Cours de Java Script -->
+  <link rel="stylesheet" type="text/css" href="../css/cours_JS.css" />
   <!-- Description du site pour moteur de recherche -->
   <meta name="description" content="Site de la Code Académie" />
   <meta name="keywords" content="code, académie, MAIF, HTML, CSS, JavaScript" />
@@ -24,7 +25,7 @@
   <header>
     <a href="/">
       <div id="logo">
-        <img src="images/icon.png" alt="Logo de la Code Académie" />
+        <img src="../images/icon.png" alt="Logo de la Code Académie" />
         <h1>Code Académie</h1>
       </div>
     </a>
@@ -38,17 +39,18 @@
     <nav>
       <h2>Menu</h2>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="../index.html">Accueil</a></li>
         <li><a href="#">Actu</a></li>
         <li><a href="#">Tableau</a></li>
-        <li><a href="cours/20171019.html" target="_blank">Cours du 19/10/2017</a></li>
+        <li><a href="../cours/20171019.html" target="_blank">Cours du 19/10/2017</a></li>
         <li>Cours JavaScript</li>
         <ul>
-          <li><a href="cours_JS/20180423.html">Exercice 23/04/2018 - Nb premiers</a></li>
-          <li><a href="cours_JS/20180507.html">Exercice 07/05/2018 - Filter, Map & Sort</a></li>
+          <li><a href="20180423.html">Exercice 23/04/2018 - Nb premiers</a></li>
+          <li class="selected">Exercice 07/05/2018 - Filter, Map & Sort</li>
         </ul>
-        <li class="selected">A propos</li>
-        <li><a href="contact.html">Nous contactez</a></li>
+        <li><a href="../a_propos.html">A propos</a></li>
+        <li><a href="../contact.html">Nous contactez</a></li>
+        <li><a href="../contact_min.html">Nous contactez [formulaire minimaliste]</a></li>
       </ul>
     </nav>
     <!-- Menu de navigation - Fin déclaration -->
@@ -56,12 +58,29 @@
     <!-- Zone des articles - Début déclaration -->
     <section>
       <!-- Contenu textuel de la page -->
+      <h1>
+        Filter, Map & Sort
+      </h1>
+      <details>
+        <summary>Enoncé de l'exercice</summary>
+        <a href="https://github.com/code-academie/website/wiki/7-mai-2018" target="_blank">code-academie/website/wiki/07-mai-2018</a>
+      </details>
+
       <article>
-        <img src="images/stephane-daviet.png" alt="Photo de Stéphane DAVIET" />
-        <h3>A propos de ...</h3>
-        <p>
+        <img src="../images/javascript.png" alt="Logo JavaScript" />
+        <h3>Array.prototype.filter, sort & map</h3>
+        <button type="button" onclick="DisplayResult('resultExtractSort',['toto', '45', 'toti', '13', '2342','2', '1t', 1, 3]);">Affichage</button>
+        <p id="resultExtractSort">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
+        </p>
+      </article>
+
+      <article>
+        <img src="../images/javascript.png" alt="Logo JavaScript" />
+        <h3>Array.prototype.filter, sort & map avec des Lambdas</h3>
+        <button type="button" onclick="DisplayResult('resultExtractSortLambda',['toto', '45', 'toti', '13', '2342','2', '1t', 1, 3]);">Affichage</button>
+        <p id="resultExtractSortLambda">
           Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur
           ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
         </p>
@@ -84,7 +103,7 @@
     <p>Copyright Bertrand DELION - Tous droits réservés<br /> Code &amp; design par <a href="mailto:bertrand.delion@free.fr">fifiz</a></p>
   </footer>
   <!-- Pied de page - Fin déclaration -->
-
+  <script type="text/javascript" src="20180507.js"></script>
 </body>
 
 </html>
