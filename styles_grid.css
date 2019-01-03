@@ -1,0 +1,50 @@
+body {
+    margin : 0; /* pas de marge */
+    min-height:100vh; /* si le contenu (1 seul article par exemple) est plus petit que l'écran, le body est fixé à la taille de l'écran */
+    display: grid;
+    grid-template-areas: 
+      "header header"
+      "nav articles";
+    grid-template-rows: 10% auto;  
+    grid-template-columns: 150px auto;
+}
+  
+  header {
+    grid-area: header;
+    background-color: rgb(52, 152, 219);  /* couleur bleu pour le fond du titre */
+    color:white; /* couleur du titre */
+    text-align : center; /* titre centré */
+  }
+  
+  header h1 {
+    font-size : 3em; /* taille du texte */
+  }
+  
+  header h2 {
+    font-size : 2em; /* taille du texte */
+  }
+  
+  nav {
+    background-color: lightblue; /* couleur du menu */
+    grid-area: nav;
+  }
+  
+  section {
+    background-color:white; /* les articles sur fond blanc */
+    grid-area: articles;
+  }
+  
+  section article {
+    margin:10px;
+    padding:10px;
+    border: 2px solid blue; /* bordure bleue */
+    border-radius: 25px; /* bordure arrondie */ 
+    box-shadow: 5px 5px grey; /* bordure avec ombre */
+    overflow:auto;   /* le contenu (l'image flottante entre autres) ne dépasse pas le contenant */
+  }
+  
+  section img, section video {
+    margin:10px;
+    float : left; /* l'image à gauche avec le texte autour */
+    width: 25%; /* taille par défaut en pourcentage du conteneur parent (l'article) */
+  }
