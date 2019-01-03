@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <!-- Partie technique de la page -->
+  <title>Code Academie - Acceuil</title>
+  <!-- Feuille de style -->
+  <!-- Déclaration des ressources externes : CSS -->
+  <link rel="stylesheet" type="text/css" href="./styles_grid.css" />
+  <!-- Description de l'encodage utilisé (pour les caractères accentués) -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Description du site pour moteur de recherche -->
+  <meta name="description" content="Site de la Code Académie" />
+  <meta name="keywords" content="code, académie, MAIF, HTML, CSS, JavaScript" />
+</head>
+
+<body>
+  <header>   <!-- Bandeau d'entête de la page-->
+    <h1>Code Académie</h1>
+    <h2>Naviguez entre les pages</h2>
+  </header>
+
+    <!-- Menu de navigation -->
+    <nav>
+          <h2>Menu</h2>
+          <ul>
+            <li><a href="index.html">Articles</a></li>
+            <li><a href="formulaire.html">Formulaire</a></li>
+            <li><a href="a_propos.html">A propos</a></li>
+          </ul>
+    </nav>
+
+    <section id="formulaire">
+        <h2>Formulaire de saisie</h2>
+        <p>Voici un exemple de formulaire permettant de poster son prénom avec un style par défaut : </p>
+        <form action="https://postb.in/kQgSlcOh" method="POST" class="ugly">
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom" value=""
+                placeholder="Votre prénom" />
+            <input type="submit" />
+            <input type="reset" />
+        </form>
+        <p>Voici un exemple de formulaire permettant de poster son prénom avec un style coloré : </p>
+        <form action="https://postb.in/kQgSlcOh" method="POST" class="pretty">
+            <label for="prenom" class="required">Prénom</label>
+            <input type="text" name="prenom" id="prenom" value=""
+                placeholder="Votre prénom"
+                required />
+            <input type="submit" />
+            <input type="reset" />
+        </form>
+   </section>
+</body>
+</html>

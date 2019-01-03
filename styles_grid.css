@@ -5,7 +5,7 @@ body {
     grid-template-areas: 
       "header header"
       "nav articles";
-    grid-template-rows: 10% auto;  
+    grid-template-rows: 200px auto;  
     grid-template-columns: 150px auto;
 }
   
@@ -43,8 +43,72 @@ body {
     overflow:auto;   /* le contenu (l'image flottante entre autres) ne dépasse pas le contenant */
   }
   
-  section img, section video {
+  section article img, section article video {
     margin:10px;
     float : left; /* l'image à gauche avec le texte autour */
     width: 25%; /* taille par défaut en pourcentage du conteneur parent (l'article) */
+  }
+
+  /* ********************************************************************************
+                      Page about
+  ******************************************************************************** */
+  #about {
+    margin : 50px;
+  }
+
+  #about img {
+    display:block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #about p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+  }
+
+   /* ********************************************************************************
+                      Page formulaire
+  ******************************************************************************** */
+
+  #formulaire {
+    margin : 20px;
+  }
+
+  #formulaire form {
+   display : block;
+   margin-left: auto;
+   margin-right: auto;
+   border: grey 1px solid;
+   padding:15px;
+   width:500px;
+   height:100px;
+}
+
+  .pretty label::after {
+    content: ' :';
+    display: inline;
+  }
+  .pretty label.required::after {
+    content: '* :';
+    display: inline;
+  }
+  .pretty input {
+    padding: 3px 10px;
+  }
+  .pretty input[type="text"][required] {
+
+    padding: 2px 10px;
+    border: solid 1px lightblue;
+  }
+  .pretty input[type="submit"], .pretty input[type="reset"] {
+    border: none;
+  }
+  .pretty input[type="submit"] {
+    background: lightgreen;
+  }
+  .pretty input[type="reset"] {
+    background: pink;
   }
