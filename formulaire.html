@@ -38,14 +38,26 @@
                 placeholder="Votre prénom" />
             <input type="submit" />
             <input type="reset" />
+            <p>Allez sur <a href="https://beeceptor.com/console/codeacademie">beeceptor</a> pour visualiser les données envoyées</p>
         </form>
         <p>Voici un exemple de formulaire permettant de poster son prénom avec un style coloré : </p>
         <form action="https://codeacademie.free.beeceptor.com/api/prenom" method="POST" class="pretty">
-            <label for="prenom" class="required">Prénom</label>
-            <input type="text" name="prenom" id="prenom" value=""
-                placeholder="Votre prénom"
-                required />
-            <input type="submit" />
+
+                <fieldset>
+                        <legend> A propos de vous </legend>
+
+                        <p>
+                           <label for="prenom" class="required">Prénom</label>
+                           <input type="text" name="prenom" id="prenom" value=""
+                              placeholder="Votre prénom" required />
+                        </p>
+                        </p>
+                            <input type="radio" name="age" value="mineur" id="mineur" /> <label for="mineur">Mineur</label>
+                            <input type="radio" name="age" value="majeur" id="mineur" /> <label for="majeur">Majeur</label>
+                        </p>
+                </fieldset>
+    
+                <input type="submit" />
             <input type="reset" />
         </form>
    </section>
